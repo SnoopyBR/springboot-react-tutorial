@@ -1,0 +1,38 @@
+{
+  "name": "spring-data-rest-and-reactjs",
+  "version": "0.1.0",
+  "description": "Demo of ReactJS + Spring Data REST",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:SnoopyBR/springboot-react-tutorial.git"
+  },
+  "keywords": [
+    "rest",
+    "hateoas",
+    "spring",
+    "data",
+    "react"
+  ],
+  "author": "Julio Cesar Pedroso",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/SnoopyBR/springboot-react-tutorial/issues"
+  },
+  "homepage": "https://github.com/SnoopyBR/springboot-react-tutorial",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "rest": "^2.0.0"
+  },
+  "scripts": {
+    "watch": "webpack --watch -d"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
