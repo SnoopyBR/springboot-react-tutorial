@@ -1,4 +1,4 @@
-package net.weg.wdc.stf.domain.payrol;
+package com.example.app.domain.payrol;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
