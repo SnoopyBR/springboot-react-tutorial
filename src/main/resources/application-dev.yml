@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://brjgsd312446;instanceName=SQLEXPRESS;databaseName=WEG_MIB_Database
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    password: weg1234@
+    username: sa
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.SQLServer2012Dialect
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true

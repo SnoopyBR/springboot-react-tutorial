@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: dev
+  data:
+    rest:
+      base-path: /api
+  devtools:
+    restart:
+      additional-paths: js/**
+

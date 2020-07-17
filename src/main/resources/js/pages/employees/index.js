@@ -8,11 +8,12 @@ export default function Employee() {
     const [employees,setEmployees] = useState([]);
     useEffect(()=>{
 
-        api.get('employees')
+        api.get('employees', { params: { size: 2 }})
         .then(response =>{
             //response._embedded.employees
-            console.log(response);
+            console.log("reponse - >" , response);
             setEmployees(response.data._embedded.employees);
+
         })
 
         
@@ -27,14 +28,14 @@ export default function Employee() {
                     <th>Description</th>
                     <th>Actions</th>
                 </tr>
-                {console.log(employees),
+                {
                 employees.map(employee =>(
                     
                     <tr key= {employee._links.self.href}>
                         <td>{employee.firstName}</td>
                         <td>{employee.lastName}</td>
                         <td>{employee.description}</td>
-                        <td><a name="" id="employee._links.self.href" className="btn btn-danger" href="#" role="button"><FiDelete /></a></td>
+                        
                     </tr>
                 ))}
 
