@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:sqlserver://brjgsd312446;instanceName=SQLEXPRESS;databaseName=WEG_MIB_Database
+    url: jdbc:sqlserver://localhost;instanceName=SQLEXPRESS;databaseName=Database
     driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    password: weg1234@
+    password: 
     username: sa
     
   jpa:
